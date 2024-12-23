@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ervotech offers expert web consulting, including SEO, web design, and software development tailored to your business needs.">
+    <meta name="keywords" content="Web Consulting, SEO Services, Web Development, Website Migration, Software Development">
+    <meta name="author" content="Ervotech">
+    <meta property="og:title" content="Transform Your Web Presence with Ervotech">
+    <meta property="og:description" content="Modern web solutions for SEO, web design, and software development.">
+    <meta property="og:image" content="images/Logo2.png">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Web Consulting Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Organization Schema Markup -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Ervotech",
+            "url": "https://yourwebsite.com",
+            "logo": "https://yourwebsite.com/images/Logo2.png",
+            "contactPoint": [{
+                "@type": "ContactPoint",
+                "telephone": "+1-234-567-89",
+                "contactType": "Customer Service",
+                "email": "contact@ervotech.com"
+            }],
+            "sameAs": [
+                "https://www.facebook.com/ervotech",
+                "https://www.twitter.com/ervotech",
+                "https://www.linkedin.com/company/ervotech"
+            ]
+        }
+    </script>
+
+</head>
+
+<body data-theme="dark">
+    <div class="progress-bar" id="progress-bar"></div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle Theme">Switch Theme</button>
+
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="images/Logo2.png" alt="Logo" width="100" height="120"> ervotech
+                <span>.</span>
+            </div>
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#metrics">Metrics</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+            ☰
+        </button>
+        </div>
+    </header>
+
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Web Presence</h1>
+            <p>We specialize in modern web solutions, including SEO, website design, and software development tailored to your needs.</p>
+            <div class="hero-buttons">
+                <a href="#services" class="primary-btn">Explore Services</a>
+                <a href="#contact" class="secondary-btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Split Section -->
+    <section class="split-section">
+        <div class="split-text">
+            <h2>Our Commitment</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ligula sit amet nunc scelerisque faucibus vel et mauris.</p>
+        </div>
+        <div class="split-image" role="img" aria-label="City skyline with modern design aesthetic"></div>
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3>Website Migration</h3>
+                    <p itemprop="description">Seamless migration of your website to modern, scalable platforms.</p>
+                </div>
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">SEO Optimization</h3>
+                    <p itemprop="description">Boost your search rankings with our proven SEO strategies.</p>
+                </div>
+
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Web Design & Development</h3>
+                    <p itemprop="description">Create stunning, user-friendly websites for your business.</p>
+                </div>
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Software Development</h3>
+                    <p itemprop="description">Custom web applications tailored to meet your business goals.</p>
+                </div>
+                <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                    <h3 itemprop="name">Content Strategy</h3>
+                    <p itemprop="description">Crafting compelling content to drive engagement and results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metrics Section -->
+    <section class="metrics" id="metrics">
+        <div class="container">
+            <h2>Our Achievements</h2>
+            <div class="metrics-grid">
+                <div class="metric-item">
+                    <h3 id="metric1" data-target="100">0</h3>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="metric-item">
+                    <h3 id="metric2" data-target="50">0</h3>
+                    <p>Happy Clients</p>
+                </div>
+                <div class="metric-item">
+                    <h3 id="metric3" data-target="10">0</h3>
+                    <p>Years in Business</p>
+                </div>
+                <div class="metric-item">
+                    <h3 id="metric4" data-target="20">0</h3>
+                    <p>Team Members</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Cutting-Edge Tools</h3>
+                    <p>We use the latest technologies to ensure your business stays ahead.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Expert Team</h3>
+                    <p>Our team consists of industry experts with years of experience.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Tailored Solutions</h3>
+                    <p>Every project is customized to meet your specific needs.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Data-Driven Approach</h3>
+                    <p>We analyze data to make informed decisions for your success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2>What Our Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial" itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"The Web Consult team delivered exactly what we needed, and our site has never performed better."</p>
+                    <h4>- Jane Doe</h4>
+                </div>
+                <div class="testimonial" itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"Professional, reliable, and innovative. Highly recommend for web development projects!"</p>
+                    <h4>- John Smith</h4>
+                </div>
+                <div class="testimonial" itemscope itemtype="https://schema.org/Review">
+                    <p itemprop="reviewBody">"Thanks to Web Consult, our online presence has skyrocketed. Fantastic work!"</p>
+                    <h4>- Emily Clark</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>We’d love to hear from you. Fill out the form below, and we’ll get back to you shortly.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-about">
+                <h4>About Us</h4>
+                <p>We deliver cutting-edge web solutions tailored to your business needs. From SEO to software development, we ensure your digital presence thrives.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#metrics">Metrics</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: <a href="mailto:contact@ervotech.com">contact@ervotech.com</a></p>
+                <p>Phone: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+            </div>
+
+            <div class="footer-newsletter">
+                <h4>Subscribe to Our Newsletter</h4>
+                <p>Stay updated with our latest insights and offers.</p>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Your Email Address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p id="newsletter-message" class="hidden"></p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Ervotech. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            // Apply Theme Preference
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.body.dataset.theme = savedTheme;
+
+            // Section Animation on Scroll
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+            sections.forEach(section => observer.observe(section));
+        });
+
+        let isScrolling = false;
+        window.addEventListener('scroll', () => {
+            if (!isScrolling) {
+                window.requestAnimationFrame(() => {
+                    const scrollProgress = document.getElementById('progress-bar');
+                    const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+                    const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                    const scrollPercentage = (scrollTop / scrollHeight) * 100;
+                    scrollProgress.style.width = scrollPercentage + '%';
+                    isScrolling = false;
+                });
+                isScrolling = true;
+            }
+        });
+
+
+        function toggleTheme() {
+            const body = document.body;
+            body.dataset.theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', body.dataset.theme);
+        }
+
+        // Apply stored theme on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Apply Theme Preference
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.body.dataset.theme = savedTheme;
+
+            // Section Animation on Scroll
+            const sections = document.querySelectorAll('section');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.2
+            });
+            sections.forEach(section => observer.observe(section));
+        });
+
+
+        // Contact Form Validation
+        document.querySelector('.contact-form').addEventListener('submit', (e) => {
+            const name = document.querySelector('.contact-form input[type="text"]').value.trim();
+            const email = document.querySelector('.contact-form input[type="email"]').value.trim();
+            const message = document.querySelector('.contact-form textarea').value.trim();
+
+            if (!name || !email || !message) {
+                alert('Please fill out all fields');
+                e.preventDefault();
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                alert('Please enter a valid email address');
+                e.preventDefault();
+            } else {
+                alert('Thank you for your message! We will get back to you soon.');
+            }
+        });
+
+
+        // Newsletter Subscription Form Handling
+        const newsletterForm = document.getElementById('newsletter-form');
+        const newsletterMessage = document.getElementById('newsletter-message');
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const emailInput = newsletterForm.querySelector('input[type="email"]');
+            const email = emailInput.value.trim();
+
+            if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+                newsletterMessage.textContent = 'Please enter a valid email address.';
+                newsletterMessage.classList.remove('hidden', 'success');
+                newsletterMessage.classList.add('error');
+                return;
+            }
+
+            newsletterMessage.textContent = 'Thank you for subscribing!';
+            newsletterMessage.classList.remove('hidden', 'error');
+            newsletterMessage.classList.add('success');
+            emailInput.value = '';
+        });
+    </script>
+</body>
