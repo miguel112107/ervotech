@@ -691,8 +691,8 @@ h2::after {
 /* --- Section Animations --- */
 
 section {
-    opacity: 0;
-    transform: translateY(20px);
+    /* opacity: 0;
+    transform: translateY(10px); */
     transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
@@ -760,6 +760,84 @@ html {
     color: var(--text-light);
     cursor: pointer;
     z-index: 1001;
+}
+
+
+/* --- Global Styles --- */
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar Styles */
+
+.navbar {
+    background: var(--primary-dark);
+    color: var(--text-light);
+}
+
+
+/* Footer Styles */
+
+footer {
+    background: var(--secondary-dark);
+    color: var(--text-light);
+}
+
+
+/* --- Page-Specific Styles --- */
+
+
+/* About Us Page */
+
+.about-hero {
+    background: var(--accent-teal);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.about-values ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-values li {
+    margin: 1rem 0;
+    font-weight: bold;
+}
+
+
+/* FAQ Page */
+
+.faq-hero {
+    background: var(--accent-purple);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.faq-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid var(--secondary-light);
+}
+
+
+/* Case Studies Page */
+
+.case-hero {
+    background: var(--accent-yellow);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.case-studies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
 }
 
 @media (max-width: 768px) {
