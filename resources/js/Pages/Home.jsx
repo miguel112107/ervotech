@@ -25,16 +25,6 @@ export default function Home({ auth }) {
             </section>
 
             {/* <!-- Split Section --> */}
-            <section class="split-section">
-                <div class="split-text">
-                    <h2>Our Commitment</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ligula sit amet nunc scelerisque faucibus vel et mauris.</p>
-                </div>
-                <div class="split-image" role="img" aria-label="City skyline with modern design aesthetic"></div>
-
-            </section>
-
-            {/* <!-- Split Section --> */}
             <section className="split-section">
                 <div className="split-text">
                     <h2>Our Commitment</h2>
@@ -42,21 +32,43 @@ export default function Home({ auth }) {
                         At Ervotech, we are committed to delivering digital solutions that drive growth, innovation, and success for your business.
                         Our team combines expertise, creativity, and technology to craft websites and applications tailored to your unique needs.
                         We don't just build projects; we build partnerships that last.
-        </p>
+                    </p>
                     <p>
                         <em>Your success is our priority, and every project reflects our dedication to excellence.</em>
                     </p>
                 </div>
-                <div
-                    className="split-image"
-                    role="img"
-                    aria-label="Modern desk setup with a laptop, notepad, and coffee mug in a clean workspace"
-                    style={{
-                        background: 'url("/images/modern-workspace.jpg") center/cover no-repeat'
-                    }}
-                ></div>
+                <div class="split-image" role="img" aria-label="Modern desk setup with a laptop, notepad, and coffee mug in a clean workspace"></div>
             </section>
 
+            {/* <!-- Services Section --> */}
+            <section class="services" id="services">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="service-grid">
+                        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <h3>Website Migration</h3>
+                            <p itemprop="description">Seamless migration of your website to modern, scalable platforms.</p>
+                        </div>
+                        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <h3 itemprop="name">SEO Optimization</h3>
+                            <p itemprop="description">Boost your search rankings with our proven SEO strategies.</p>
+                        </div>
+
+                        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <h3 itemprop="name">Web Design & Development</h3>
+                            <p itemprop="description">Create stunning, user-friendly websites for your business.</p>
+                        </div>
+                        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <h3 itemprop="name">Software Development</h3>
+                            <p itemprop="description">Custom web applications tailored to meet your business goals.</p>
+                        </div>
+                        <div class="service-card" itemscope itemtype="https://schema.org/Service">
+                            <h3 itemprop="name">Content Strategy</h3>
+                            <p itemprop="description">Crafting compelling content to drive engagement and results.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
             {/* <!-- Metrics Section --> */}
             <section class="metrics" id="metrics">
