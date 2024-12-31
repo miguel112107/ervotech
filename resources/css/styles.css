@@ -181,7 +181,7 @@
 
 .split-image {
     flex: 1;
-    background: url('images/ModernDT.webp') center/cover no-repeat;
+    background: url('../../public/images/ModernDT.webp') center/cover no-repeat;
 }
 
 .split-text h2 {
