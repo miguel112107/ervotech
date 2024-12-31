@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faYelp, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { Link } from '@inertiajs/react';
 
 export default function Footer() {
     return (
@@ -12,16 +13,16 @@ export default function Footer() {
                 <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#metrics">Metrics</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><Link href="/">Home</Link></li>
+                        <li><Link href="about">About</Link></li>
+                        <li><Link href="case-studies">Case Studies</Link></li>
+                        <li><Link href="faq">FAQ</Link></li>
                     </ul>
                 </div>
                 <div class="footer-contact">
                     <h4>Contact Us</h4>
-                    <p>Email: <a href="mailto:contact@ervotech.com">contact@ervotech.com</a></p>
-                    <p>Phone: <a href="tel:+123456789">+1 (234) 567-89</a></p>
+                    <p>Email: <a href="mailto:contact@ervotechep.com">contact@ervotechep.com</a></p>
+                    <p>Phone: <a href="tel:+9153410376">+1 (915) 341-0376</a></p>
                 </div>
 
                 <div class="footer-newsletter">

@@ -179,11 +179,6 @@
     color: var(--accent-teal);
 }
 
-.split-image {
-    flex: 1;
-    background: url('../../public/images/ModernDT.webp') center/cover no-repeat;
-}
-
 .split-text h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -805,31 +800,50 @@ section.visible {
 
 .split-section {
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    flex-wrap: nowrap;
+    /* Ensure no wrapping between text and image */
+    align-items: stretch;
+    /* Make both halves match the height */
+    justify-content: space-between;
+    /* Keep equal spacing */
     background-color: var(--primary-light);
+    overflow: hidden;
+    /* Prevent unwanted overflow */
 }
 
 .split-text {
     flex: 1;
-    min-width: 300px;
-    padding: 2rem;
+    padding: 4rem;
+    /* Adjust for better spacing */
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--primary-light);
+    /* Ensure text side stays clean */
 }
 
 .split-text h2 {
-    /* text-align: left; */
     color: var(--accent-teal);
+    margin-bottom: 1rem;
 }
+
+.split-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Ensure the image takes up the full half */
 
 .split-image {
     flex: 1;
-    min-width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    background: url('images/Split_City.webp') center/cover no-repeat;
+    height: auto;
+    min-height: 400px;
+    /* Ensures it matches the text section's height */
+    background: url('../../public/images/Office.webp') center/cover no-repeat;
+    border-radius: 0;
+    /* Remove border-radius for seamless alignment */
     box-shadow: var(--box-shadow);
 }
 
@@ -1117,12 +1131,16 @@ footer {
     }
     @media (max-width: 768px) {
         .split-section {
-            flex-direction: column;
-            text-align: center;
+            flex-wrap: wrap;
+            /* Stack on smaller screens */
         }
         .split-text,
         .split-image {
-            width: 100%;
+            flex: 1 1 100%;
+            min-height: 300px;
+        }
+        .split-text {
+            padding: 2rem;
         }
     }
     .service-card {
