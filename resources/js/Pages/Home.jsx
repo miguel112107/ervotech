@@ -70,58 +70,56 @@ export default function Home({ auth }) {
                 </div>
             </section>
 
-            {/* <!-- Metrics Section --> */}
-            <section class="metrics" id="metrics">
-                <div class="container">
-                    <h2>Our Achievements</h2>
-                    <div class="metrics-grid">
-                        <div class="metric-item">
-                            <h3 id="metric1" data-target="100">0</h3>
-                            <p>Projects Completed</p>
+            {/* <!-- Vision Section --> */}
+            <section className="vision" id="vision">
+                <div className="container">
+                    <h2>Our Vision</h2>
+                    <div className="vision-content">
+                        <p>
+                            At <strong>Ervotech</strong>, our vision is to empower businesses with cutting-edge digital solutions
+                that foster growth, efficiency, and success. We aim to create websites and applications that not
+                only meet expectations but exceed them.
+            </p>
+                        <p>
+                            Our approach combines innovative technologies, strategic thinking, and a deep commitment
+                            to customer satisfaction. Every project is an opportunity to make a meaningful impact.
+            </p>
+                    </div>
+                    <div className="vision-cta">
+                        <a href="#contact" className="primary-btn">Let's Build Together</a>
+                    </div>
+                </div>
+            </section>
+
+
+            {/* <!-- Why Choose Us Section --> */}
+            <section className="features" id="features">
+                <div className="container">
+                    <h2>Why Choose Us?</h2>
+                    <div className="feature-grid">
+                        <div className="feature-item">
+                            <h3>Innovative Solutions</h3>
+                            <p>We blend creativity with technology to deliver impactful results.</p>
                         </div>
-                        <div class="metric-item">
-                            <h3 id="metric2" data-target="50">0</h3>
-                            <p>Happy Clients</p>
+                        <div className="feature-item">
+                            <h3>Client-Centered Approach</h3>
+                            <p>Every project is built around your unique business goals.</p>
                         </div>
-                        <div class="metric-item">
-                            <h3 id="metric3" data-target="10">0</h3>
-                            <p>Years in Business</p>
+                        <div className="feature-item">
+                            <h3>Scalable Design</h3>
+                            <p>We future-proof your website with scalable solutions.</p>
                         </div>
-                        <div class="metric-item">
-                            <h3 id="metric4" data-target="20">0</h3>
-                            <p>Team Members</p>
+                        <div className="feature-item">
+                            <h3>Transparent Communication</h3>
+                            <p>Clear and consistent communication throughout every step.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* <!-- Features Section --> */}
-            <section class="features" id="features">
-                <div class="container">
-                    <h2>Why Choose Us?</h2>
-                    <div class="feature-grid">
-                        <div class="feature-item">
-                            <h3>Cutting-Edge Tools</h3>
-                            <p>We use the latest technologies to ensure your business stays ahead.</p>
-                        </div>
-                        <div class="feature-item">
-                            <h3>Expert Team</h3>
-                            <p>Our team consists of industry experts with years of experience.</p>
-                        </div>
-                        <div class="feature-item">
-                            <h3>Tailored Solutions</h3>
-                            <p>Every project is customized to meet your specific needs.</p>
-                        </div>
-                        <div class="feature-item">
-                            <h3>Data-Driven Approach</h3>
-                            <p>We analyze data to make informed decisions for your success.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
 
             {/* <!-- Testimonials Section --> */}
-            <section class="testimonials" id="testimonials">
+            {/* <section class="testimonials" id="testimonials">
                 <div class="container">
                     <h2>What Our Clients Say</h2>
                     <div class="testimonial-grid">
@@ -139,7 +137,7 @@ export default function Home({ auth }) {
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> */}
             {/* <!-- Contact Section --> */}
             <section class="contact" id="contact">
                 <div class="container">
